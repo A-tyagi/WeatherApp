@@ -13,11 +13,12 @@
 
 <body>
 	<div class="container">
-		<div class="weather-side">
+		<div class="weather-side" id="locImage">
 			<div class="weather-gradient"></div>
 			<div class="date-container">
-				<h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span><i class="location-icon"
-					data-feather="map-pin"></i><p class="location">Paris, FR</span>
+				<h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span><i
+					class="location-icon"></i>
+				<p class="location">Paris, FR</span>
 			</div>
 			<div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
 				<h1 class="weather-temp">29°C</h1>
@@ -26,20 +27,23 @@
 			<div class="like-container">
 				<i class="thumbs-icon" data-feather="thumbs-down"></i>
 				<i class="thumbs-icon" data-feather="thumbs-up"></i>
-			
+
 			</div>
 		</div>
 		<div class="info-side">
 			<div class="today-info-container">
 				<div class="today-info">
-					<div class="precipitation"> <span class="title">PRECIPITATION</span><p class="value">12 %</span>
-						<div class="clear"></div>
+					<div class="precipitation"> <span class="title">PRESSURE</span>
+						<p class="value">999 mb</span>
+							<div class="clear"></div>
 					</div>
-					<div class="humidity"> <span class="title">HUMIDITY</span><p class="value">34 %</span>
-						<div class="clear"></div>
+					<div class="humidity"> <span class="title">HUMIDITY</span>
+						<p class="value">999 %</span>
+							<div class="clear"></div>
 					</div>
-					<div class="wind"> <span class="title">WIND</span><p class="value">0 km/h</span>
-						<div class="clear"></div>
+					<div class="wind"> <span class="title">WIND</span>
+						<p class="value">999 km/h</span>
+							<div class="clear"></div>
 					</div>
 				</div>
 			</div>
@@ -62,8 +66,8 @@
 					<div class="clear"></div>
 				</ul>
 			</div>
-			<div class="location-container"><button class="location-button"> <i data-feather="map-pin"></i><span>Change
-						location</span></button>
+			<div class="location-container"><button class="location-button"> <i data-feather="map-pin"></i><input
+						type="text" autocomplete="on" class="search-box" placeholder="Search for a city..." /></button>
 			</div>
 
 		</div>
