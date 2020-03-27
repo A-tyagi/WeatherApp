@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<script src="https://kit.fontawesome.com/d76610eed7.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./style.css" />
-
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
 </head>
 
 <body>
@@ -16,18 +16,20 @@
 		<div class="weather-side" id="locImage">
 			<div class="weather-gradient"></div>
 			<div class="date-container">
-				<h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span><i
+				<h2 class="date-dayname"></h2><span class="date-day">15 Jan 2019</span><i
 					class="location-icon"></i>
 				<p class="location">Paris, FR</span>
 			</div>
-			<div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+			<div class="weather-container">
+				<div class="weather-icon">
+					<img src="icons/rainy-6.svg" >
+				</div>
 				<h1 class="weather-temp">29°C</h1>
 				<h3 class="weather-desc">Sunny</h3>
 			</div>
 			<div class="like-container">
 				<i class="thumbs-icon" data-feather="thumbs-down"></i>
 				<i class="thumbs-icon" data-feather="thumbs-up"></i>
-
 			</div>
 		</div>
 		<div class="info-side">
@@ -49,20 +51,16 @@
 			</div>
 			<div class="week-container">
 				<ul class="week-list">
-					<li><i class="day-icon" data-feather="sun"></i><span class="day-name">Mon</span><span
-							class="day-temp">29°C</span></li>
-					<li><i class="day-icon" data-feather="cloud"></i><span class="day-name">Tue</span><span
-							class="day-temp">21°C</span></li>
-					<li><i class="day-icon" data-feather="cloud-snow"></i><span class="day-name">Wed</span><span
-							class="day-temp">08°C</span></li>
-					<li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Thu</span><span
-							class="day-temp">19°C</span></li>
-					<li><i class="day-icon" data-feather="sun"></i><span class="day-name">Fri</span><span
-							class="day-temp">25°C</span></li>
-					<li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Sat</span><span
-							class="day-temp">16°C</span></li>
-					<li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Sun</span><span
-							class="day-temp">12°C</span></li>
+					<li id="list1"><i class="day-icon"  id="WthrImg1"></i><span class="day-name" id="day1">Mon</span><span
+							class="day-temp" id="temp1">0°F</span></li>
+					<li id="list2"><i class="day-icon"  id="WthrImg2"></i><span class="day-name" id="day2">Tue</span><span
+							class="day-temp" id="temp2">0°F</span></li>
+					<li id="list3"><i class="day-icon"  id="WthrImg3" ></i><span class="day-name" id="day3">Wed</span><span
+							class="day-temp" id="temp3">0°F</span></li>
+					<li id="list4"><i class="day-icon"  id="WthrImg4"></i><span class="day-name"id="day4">Thu</span><span
+							class="day-temp" id="temp4">0°F</span></li>
+					<li id="list5"><i class="day-icon"  id="WthrImg5"></i><span class="day-name" id="day5">Fri</span><span
+							class="day-temp" id="temp5">0°F</span></li>
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -76,6 +74,7 @@
 
 	<script src="https://unpkg.com/feather-icons"></script>
 	<script src="app.js"></script>
+	
 	<script>
 		feather.replace()
 	</script>
